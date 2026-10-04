@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Python Debugger: Django",
+      "type": "debugpy",
+      "request": "launch",
+      "args": ["runserver", "0.0.0.0:8004"],
+      "django": true,
+      "autoStartBrowser": false,
+      "program": "${workspaceFolder}/manage.py",
+      "python": "${workspaceFolder}/env/bin/python3",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "DEBUG": "True",
+        "DJANGO_SETTINGS_MODULE": "settings.settings"
+      },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
